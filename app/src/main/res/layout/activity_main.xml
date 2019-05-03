@@ -31,9 +31,9 @@
         android:layout_height="224dp"
         android:layout_marginEnd="8dp"
         android:layout_marginRight="8dp"
+        android:background="@drawable/border"
         android:scaleType="centerInside"
         android:visibility="visible"
-        android:background="@drawable/border"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
@@ -105,18 +105,18 @@
         android:id="@+id/power"
         android:layout_width="65dp"
         android:layout_height="65dp"
-        android:layout_marginStart="792dp"
-        android:layout_marginLeft="792dp"
+        android:layout_marginStart="7dp"
+        android:layout_marginLeft="7dp"
         android:layout_marginEnd="8dp"
         android:layout_marginRight="8dp"
         android:layout_marginBottom="16dp"
-        android:scaleType="centerInside"
         android:background="@android:color/white"
+        android:scaleType="centerInside"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toStartOf="@+id/standby"
+        app:layout_constraintHorizontal_bias="0.953"
         app:layout_constraintStart_toStartOf="parent"
-        app:srcCompat="@drawable/powerbutton"
-        />
+        app:srcCompat="@drawable/powerbutton" />
 
 
     <android.support.constraint.Group
