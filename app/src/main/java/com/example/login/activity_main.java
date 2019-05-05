@@ -1,8 +1,10 @@
 package com.example.login;
 
+import android.content.Intent;
 import android.media.Image;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.view.View;
 import android.widget.ImageButton;
 
 public class activity_main extends AppCompatActivity {
@@ -22,6 +24,50 @@ public class activity_main extends AppCompatActivity {
         ButtonEsecuzione = (ImageButton) findViewById(R.id.esecuzione);
         ButtonConfigura = (ImageButton) findViewById(R.id.configura);
 
+        ButtonDiagnostica.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                openActivityDiagnostica();
+            }
+        });
+        ButtonConfigura.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                openActivityConfigura();
+            }
+        });
+        ButtonApprendimento.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                openActivityApprendimento();
+            }
+        });
+        ButtonEsecuzione.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                openActivityEsecuzione();
+            }
+        });
+    }
 
+    public void openActivityDiagnostica() {
+        Intent intent;
+        intent = new Intent(this, Diagnostica.class);
+        startActivity(intent);
+    }
+    public void openActivityConfigura() {
+        Intent intent;
+        intent = new Intent(this, Configura.class);
+        startActivity(intent);
+    }
+    public void openActivityApprendimento() {
+        Intent intent;
+        intent = new Intent(this, Apprendimento.class);
+        startActivity(intent);
+    }
+    public void openActivityEsecuzione() {
+        Intent intent;
+        intent = new Intent(this, Esecuzione.class);
+        startActivity(intent);
     }
 }
