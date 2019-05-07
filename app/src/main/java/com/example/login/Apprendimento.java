@@ -16,6 +16,7 @@ public class Apprendimento extends AppCompatActivity {
         setContentView(R.layout.activity_apprendimento);
 
         ButtonRifasamento = (ImageButton) findViewById(R.id.rifasamento);
+
         ButtonPercorso = (ImageButton) findViewById(R.id.percorso);
 
         ButtonRifasamento.setOnClickListener(new View.OnClickListener() {
@@ -24,6 +25,7 @@ public class Apprendimento extends AppCompatActivity {
                 System.out.println("Rifasamento");
             }
         });
+
         ButtonPercorso.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {

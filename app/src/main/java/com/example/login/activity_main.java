@@ -34,30 +34,35 @@ public class activity_main extends AppCompatActivity {
                 openActivityDiagnostica();
             }
         });
+
         ButtonConfigura.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 openActivityConfigura();
             }
         });
+
         ButtonApprendimento.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 openActivityApprendimento();
             }
         });
+
         ButtonEsecuzione.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 openActivityEsecuzione();
             }
         });
+
         ButtonPower.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 System.out.println("Acceso o Spento");
             }
         });
+
         ButtonStanby.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {

@@ -5,10 +5,10 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@android:color/white"
-    tools:context=".activity_esecuzione">
+    tools:context=".Esecuzione">
 
     <ImageButton
-        android:id="@+id/imageButton"
+        android:id="@+id/buttonAdd"
         android:layout_width="75dp"
         android:layout_height="75dp"
         android:layout_marginBottom="16dp"
@@ -16,7 +16,7 @@
         android:padding="8dp"
         android:scaleType="centerInside"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toStartOf="@+id/imageButton2"
+        app:layout_constraintEnd_toStartOf="@+id/buttonRemove"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toEndOf="@+id/textView7"
         app:srcCompat="@drawable/plus" />
@@ -37,7 +37,7 @@
         app:layout_constraintStart_toStartOf="parent" />
 
     <ImageButton
-        android:id="@+id/imageButton2"
+        android:id="@+id/buttonRemove"
         android:layout_width="75dp"
         android:layout_height="75dp"
         android:layout_marginBottom="16dp"
@@ -47,11 +47,11 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toEndOf="@+id/imageButton"
+        app:layout_constraintStart_toEndOf="@+id/buttonAdd"
         app:srcCompat="@drawable/minus" />
 
     <ImageButton
-        android:id="@+id/imageButton3"
+        android:id="@+id/buttonPlay"
         android:layout_width="228dp"
         android:layout_height="130dp"
         android:layout_marginStart="8dp"
@@ -62,14 +62,14 @@
         android:layout_marginBottom="32dp"
         android:background="@color/colorPrimaryDark"
         android:scaleType="centerInside"
-        app:layout_constraintBottom_toTopOf="@+id/imageButton4"
+        app:layout_constraintBottom_toTopOf="@+id/buttonStop"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toEndOf="@+id/textView7"
         app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@drawable/playverde" />
 
     <ImageButton
-        android:id="@+id/imageButton4"
+        android:id="@+id/buttonStop"
         android:layout_width="228dp"
         android:layout_height="130dp"
         android:layout_marginStart="8dp"
@@ -80,10 +80,10 @@
         android:layout_marginBottom="59dp"
         android:background="@color/colorPrimaryDark"
         android:scaleType="centerInside"
-        app:layout_constraintBottom_toTopOf="@+id/imageButton"
+        app:layout_constraintBottom_toTopOf="@+id/buttonAdd"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toEndOf="@+id/textView7"
-        app:layout_constraintTop_toBottomOf="@+id/imageButton3"
+        app:layout_constraintTop_toBottomOf="@+id/buttonPlay"
         app:srcCompat="@drawable/stop" />
 
     <TextView
