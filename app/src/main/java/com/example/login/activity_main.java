@@ -13,6 +13,8 @@ public class activity_main extends AppCompatActivity {
     ImageButton ButtonEsecuzione;
     ImageButton ButtonConfigura;
     ImageButton ButtonApprendimento;
+    ImageButton ButtonPower;
+    ImageButton ButtonStanby;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -23,6 +25,8 @@ public class activity_main extends AppCompatActivity {
         ButtonApprendimento = (ImageButton) findViewById(R.id.apprendimento);
         ButtonEsecuzione = (ImageButton) findViewById(R.id.esecuzione);
         ButtonConfigura = (ImageButton) findViewById(R.id.configura);
+        ButtonPower = (ImageButton) findViewById(R.id.power);
+        ButtonStanby = (ImageButton) findViewById(R.id.standby);
 
         ButtonDiagnostica.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -46,6 +50,18 @@ public class activity_main extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 openActivityEsecuzione();
+            }
+        });
+        ButtonPower.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                System.out.println("Acceso o Spento");
+            }
+        });
+        ButtonStanby.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                System.out.println("Standby");
             }
         });
     }

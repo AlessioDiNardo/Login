@@ -1,15 +1,45 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/relativeLayout"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".Apprendimento">
+
     <TextView
+        android:id="@+id/textView6"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginStart="572dp"
+        android:layout_marginLeft="572dp"
+        android:layout_marginTop="472dp"
         android:text="apprendimento"
-        android:layout_centerHorizontal="true"
-        android:layout_centerVertical="true"/>
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
-</RelativeLayout>
+    <ImageButton
+        android:id="@+id/rifasamento"
+        android:layout_width="295dp"
+        android:layout_height="295dp"
+        android:layout_marginStart="100dp"
+        android:layout_marginLeft="100dp"
+        android:layout_marginTop="152dp"
+        android:adjustViewBounds="false"
+        android:background="@color/colorPrimaryDark"
+        android:scaleType="centerInside"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/compass" />
+
+    <ImageButton
+        android:id="@+id/apprendimento_"
+        android:layout_width="295dp"
+        android:layout_height="295dp"
+        android:background="@color/colorPrimaryDark"
+        android:scaleType="centerInside"
+        app:srcCompat="@drawable/route"
+        tools:layout_editor_absoluteX="463dp"
+        tools:layout_editor_absoluteY="152dp" />
+
+</android.support.constraint.ConstraintLayout>
