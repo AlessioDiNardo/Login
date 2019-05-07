@@ -10,7 +10,7 @@
 
     <TextView
         android:id="@+id/textView6"
-        android:layout_width="368dp"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginTop="32dp"
         android:background="@color/colorPrimaryDark"
@@ -24,7 +24,7 @@
 
     <TextView
         android:id="@+id/textView8"
-        android:layout_width="367dp"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginTop="32dp"
         android:background="@color/colorPrimaryDark"
@@ -38,7 +38,7 @@
 
     <ImageButton
         android:id="@+id/rifasamento"
-        android:layout_width="356dp"
+        android:layout_width="0dp"
         android:layout_height="295dp"
         android:layout_marginStart="8dp"
         android:layout_marginLeft="8dp"
@@ -58,7 +58,7 @@
 
     <ImageButton
         android:id="@+id/percorso"
-        android:layout_width="356dp"
+        android:layout_width="0dp"
         android:layout_height="295dp"
         android:layout_marginBottom="24dp"
         android:background="@drawable/border"
@@ -73,8 +73,8 @@
 
     <TextView
         android:id="@+id/Helptextview"
-        android:layout_width="0dp"
-        android:layout_height="0dp"
+        android:layout_width="235dp"
+        android:layout_height="590dp"
         android:layout_marginStart="8dp"
         android:layout_marginLeft="8dp"
         android:background="?attr/colorButtonNormal"
@@ -91,8 +91,12 @@
         android:id="@+id/textView9"
         android:layout_width="wrap_content"
         android:layout_height="49dp"
-        android:layout_marginTop="32dp"
-        android:layout_marginBottom="60dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="6dp"
+        android:layout_marginRight="6dp"
+        android:layout_marginBottom="8dp"
         android:text="apprendimento percorsi"
         android:textAllCaps="true"
         android:textAppearance="@style/TextAppearance.AppCompat.Title"
@@ -100,10 +104,11 @@
         android:textSize="36sp"
         android:textStyle="bold|italic"
         app:fontFamily="sans-serif-black"
-        app:layout_constraintBottom_toTopOf="@+id/rifasamento"
+        app:layout_constraintBottom_toTopOf="@+id/percorso"
         app:layout_constraintEnd_toStartOf="@+id/Helptextview"
-        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.132" />
 
 </android.support.constraint.ConstraintLayout>
