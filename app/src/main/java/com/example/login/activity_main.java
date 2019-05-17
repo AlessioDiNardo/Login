@@ -16,6 +16,8 @@ public class activity_main extends AppCompatActivity {
     ImageButton ButtonPower;
     ImageButton ButtonStanby;
 
+    boolean isPressed;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -26,6 +28,7 @@ public class activity_main extends AppCompatActivity {
         ButtonEsecuzione = (ImageButton) findViewById(R.id.esecuzione);
         ButtonConfigura = (ImageButton) findViewById(R.id.configura);
         ButtonPower = (ImageButton) findViewById(R.id.power);
+        ButtonPower.setBackgroundResource(R.drawable.button_selector_main_off);
         ButtonStanby = (ImageButton) findViewById(R.id.standby);
 
         ButtonDiagnostica.setOnClickListener(new View.OnClickListener() {
@@ -60,6 +63,13 @@ public class activity_main extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 System.out.println("Acceso o Spento");
+                if(isPressed){
+                    v.setBackgroundResource(R.drawable.button_selector_main_off);
+                }
+                else{
+                    v.setBackgroundResource(R.drawable.button_selector_main_off);
+                }
+                isPressed = !isPressed;
             }
         });
 
