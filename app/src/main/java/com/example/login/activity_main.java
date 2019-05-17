@@ -67,7 +67,7 @@ public class activity_main extends AppCompatActivity {
                     v.setBackgroundResource(R.drawable.button_selector_main_off);
                 }
                 else{
-                    v.setBackgroundResource(R.drawable.button_selector_main_off);
+                    v.setBackgroundResource(R.drawable.button_selector_main_on);
                 }
                 isPressed = !isPressed;
             }
